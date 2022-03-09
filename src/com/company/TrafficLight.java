@@ -2,7 +2,7 @@ package com.company;
 
 public class TrafficLight {
 
-    public TrafficLight() {//DET HER ER DET ENESTE DER FOR DET TIL AT VIRKE INDTIL VIDERE
+    public TrafficLight() {
     }
 
     private enum trafficLightColor{
@@ -10,7 +10,11 @@ public class TrafficLight {
         YELLOW,
         GREEN,
     }
-    public trafficLightColor oneColor;
+    trafficLightColor timeToStop = trafficLightColor.RED;
+    trafficLightColor timeToDecide = trafficLightColor.YELLOW;
+    trafficLightColor timeToWalk = trafficLightColor.GREEN;
+
+    /*public trafficLightColor oneColor;
 
      public trafficLightColor gettraficLightColor0 (){
        return oneColor;
@@ -43,9 +47,6 @@ public class TrafficLight {
     }
     public trafficLightColor walk (){
         return gettraficLightColor2();
-    }
-    trafficLightColor timeToStop = trafficLightColor.RED;
-    trafficLightColor timeToDecide = trafficLightColor.YELLOW;
-    trafficLightColor timeToWalk = trafficLightColor.GREEN;
+    }*/
 
 }
